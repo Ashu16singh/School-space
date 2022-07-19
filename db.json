@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "studentName": "Shreya Singh",
+      "classNo": "12th",
+      "score": 98,
+      "result": "Passed",
+      "grade": "Excellent"
+    },
+    {
+      "id": 1,
+      "studentName": "Priyanshu Singh",
+      "classNo": "10th",
+      "score": 90,
+      "result": "Passed",
+      "grade": "Excellent"
+    },
+    {
+      "id": 2,
+      "studentName": "Prachi",
+      "classNo": "11",
+      "score": 40,
+      "result": "Passed",
+      "grade": "Excellent"
+    },
+    {
+      "id": 3,
+      "studentName": "Arun Kumar",
+      "classNo": "10",
+      "score": 11,
+      "result": "fail",
+      "grade": "Poor"
+    },
+    {
+      "id": 4,
+      "studentName": "Kabir Singh",
+      "classNo": "3rd",
+      "score": "25",
+      "result": "Passed",
+      "grade": "Excellent"
+    },
+    {
+      "studentName": "nm",
+      "classNo": "2",
+      "result": "",
+      "score": "50",
+      "grade": "",
+      "id": 5
+    }
+  ]
+}

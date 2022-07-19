@@ -1,0 +1,52 @@
+.table{
+    box-sizing: border-box;
+position: absolute;
+width: 1001px;
+height: 310px;
+left: 348px;
+top: 106px;
+background: #FFFFFF;
+border: 1px solid #E2E5EB;
+border-radius: 10px;
+font-family: 'Montserrat';
+}
+.heading{
+height: 34px;
+top: 106px;
+background-color: #F1F4F8;
+border-radius: 10px 10px 0px 0px;
+}
+.fail-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 8px;
+    gap: 10px;
+    color: #FFFFFF;
+    position: absolute;
+    width: 62px;
+    height: 20px;
+    background-color: #F24643;
+    border-radius: 16px;
+}
+.pass-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 8px;
+    gap: 10px;
+    color: #FFFFFF;
+    position: absolute;
+    width: 62px;
+    height: 20px;
+    background-color: #2CBF6E;
+    border-radius: 16px;
+}
+.student-data{
+
+    font-family: 'Montserrat';
+font-style: normal;
+
+}
