@@ -26,7 +26,9 @@ const Update = () => {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    await axios.put(`http://localhost:3001/users/${id}`, user);
+    const devEnv = process.env.NODE_ENV !=="production";
+    const {REACT_APP_DEV_URL,REACT_APP_DATA_URL} =process.env;
+    await axios.put(`${devEnv ? REACT_APP_DEV_URL :REACT_APP_DATA_URL}/${id}`, user);
     navigate("/");
   };
 
@@ -37,7 +39,9 @@ const Update = () => {
   
 
   const loadUser = async () => {
-    const result = await axios.get(`http://localhost:3001/users/${id}`);
+    const devEnv = process.env.NODE_ENV !=="production";
+    const {REACT_APP_DEV_URL,REACT_APP_DATA_URL} =process.env;
+    const result = await axios.get(`${devEnv ? REACT_APP_DEV_URL :REACT_APP_DATA_URL}/${id}`);
     setUser(result.data);
   };
   

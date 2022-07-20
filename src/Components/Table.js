@@ -12,12 +12,16 @@ const Table = () => {
   }, [])
 
   const loadUsers = async () => {
-    const result = await axios.get("http://localhost:3001/users");
+    const devEnv = process.env.NODE_ENV !=="production";
+    const {REACT_APP_DEV_URL,REACT_APP_DATA_URL} =process.env;
+    const result = await axios.get(`${devEnv ? REACT_APP_DEV_URL :REACT_APP_DATA_URL}`);
   setUser(result.data);
   }
 
 const deleteUser = async (id) => {
-await axios.delete(`http://localhost:3001/users/${id}`);
+  const devEnv = process.env.NODE_ENV !=="production";
+  const {REACT_APP_DEV_URL,REACT_APP_DATA_URL} =process.env;
+await axios.delete(`${devEnv ? REACT_APP_DEV_URL :REACT_APP_DATA_URL}/${id}`);
 loadUsers();
 }
 
