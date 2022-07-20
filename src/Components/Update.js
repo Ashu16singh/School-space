@@ -14,15 +14,7 @@ const Update = () => {
     grade: "",
   });
 
-  // const xyz = (x) => {
-  //   if (+x >= 30) {
-  //     console.log(x, "napass");
-  //     return true;
-  //   } else {
-  //     console.log(x, "pass");
-  //     return false;
-  //   }
-  // };
+
 
   const { studentName, classNo, result, score, grade } = user;
 
@@ -51,6 +43,7 @@ const Update = () => {
   
   useEffect(() => {
     loadUser();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -100,38 +93,17 @@ const Update = () => {
                     <label className="form-label" htmlFor="my-input">
                       RESULT
                     </label>
-                    <input
-                      className="form-control"
-                      name="result"
-                      value={result}
-                    >
-                      {/* <div style={{ border: "0px solid red" }}>
-              <p style={{ border: "0px solid green", width: "70px" }}>
-                {xyz(+user.score) ? (
-                  <div className="pass">Passed</div>
-                ) : (
-                  <div className="fail">Failed</div>
-                )}
-              </p>
-            </div> */}
-                    </input>
+                    <input class="form-control" type="text" value={result}  aria-label="readonly input example" readonly>
+              </input>
+              
                   </div>
                   <div>
                     <label className="form-label" htmlFor="my-input">
                       GRADE
                     </label>
-                    <input className="form-control" name="grade" value={grade}>
-                      {/* <br />
-            <div style={{ border: "0px solid red" }}>
-              <p style={{ border: "0px solid green", width: "70px" }}>
-                {xyz(+user.score) ? (
-                  <div className="ave"><p style={{color:"#2CA4D8"}}>Average</p></div>
-                ) : (
-                  <div className="poo"><p style={{color:"#F24643"}}>Poor</p></div>
-                )}
-              </p>
-            </div> */}
-                    </input>
+                    <input class="form-control" type="text" value={grade}  aria-label="readonly input example" readonly>
+              
+              </input>
                   </div>
                   <hr />
                   <div className="d-flex justify-content-end">

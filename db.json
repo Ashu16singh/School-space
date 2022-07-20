@@ -39,14 +39,6 @@
       "score": "25",
       "result": "Passed",
       "grade": "Excellent"
-    },
-    {
-      "studentName": "nm",
-      "classNo": "2",
-      "result": "",
-      "score": "50",
-      "grade": "",
-      "id": 5
     }
   ]
 }

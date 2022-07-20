@@ -3,6 +3,7 @@ import "./Table.css"
 import axios from 'axios'
 import {Link } from 'react-router-dom'
 
+
 const Table = () => {
   const [users, setUser] =useState([]);
 
@@ -30,18 +31,7 @@ loadUsers();
     }
   };
 
-  // const xyz = (x) => {
-  //     if (+x >= 30 && +x <= 75   ) {
-  //       console.log(x, "pass");
-  
-  //   } else if(+x >= 75){
-  //        console.log(x, "excellent");
-  
-  //     }else {
-  //       console.log(x, "fail");
-  
-  //    }
-  //    };
+
 
   return (
     <>
