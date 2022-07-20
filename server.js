@@ -2,10 +2,10 @@ const jsonServer =require("json-server");
 const server = jsonServer.create();
 const router=jsonServer.router("./db.json");
 const cors =require("cors")
-const middleware =jsonServer.default({
+const middleware =jsonServer.defaults({
     static:"./build"
 });
-const PORT =process.env.PORT|| 3002;
+const PORT =process.env.PORT|| 3000;
 server.use(middleware);
 server.use(
     jsonServer.rewriter({
