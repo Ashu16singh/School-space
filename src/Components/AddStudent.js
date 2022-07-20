@@ -21,8 +21,9 @@ const AddStudent = () => {
   };
   const onSubmit = async (e) => {
     e.preventDefault();
-    console.log("event clicked");
-    await axios.post("http://localhost:3001/users", user);
+    const devEnv = process.env.NODE_ENV !=="production";
+    const {REACT_APP_DEV_URL,REACT_APP_DATA_URL} =process.env;
+    await axios.post(`${devEnv ? REACT_APP_DEV_URL :REACT_APP_DATA_URL}`, user);
     navigate("/");
   };
  const  onCancel = e =>{
